@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="outer">
+      <p> outer</p>
+      <div id="middle">
+        <p>middle</p>
+        <div id="inner">
+          <p>inner</p>
+        </div>
+      </div>
+    </div>
+    <script>
+    document.getElementById("inner").addEventListener("click", function(event){
+      alert("inner");
+    },false);
+    document.getElementById("middle").addEventListener("click", function(event){
+      alert("middle");
+    },true);
+    document.getElementById("outer").addEventListener("click", function(event){
+      alert("outer");
+    },false);
+    </script>
+  </body>
+</html>

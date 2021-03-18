@@ -1,0 +1,24 @@
+<!DOCTYPE html> 
+<html> 
+  
+<body> 
+    <button id="try">Click here</button> 
+    <h1 id="text"></h1> 
+    <script> 
+    document.getElementById("try").addEventListener("click", function(){ 
+    document.getElementById("text").innerText = "Changed by Event"; 
+}); 
+    </script> 
+
+
+<script>
+    document.getElementById("b1").addEventListener("click", myFunction);
+    
+    function myFunction() {
+      document.getElementById("demo").innerHTML = "Hello World";
+    }
+    </script>
+    
+</body> 
+  
+</html>   
